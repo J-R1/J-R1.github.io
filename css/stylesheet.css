@@ -21,7 +21,7 @@ body {
 		display: none!important;
 	}
 	nav > .logo > img {
-		max-height: 150px!important;
+		max-height: 90px!important;
 	}
 
 }
@@ -33,6 +33,10 @@ body {
 	}
 	nav > .logo > img {
 		max-height: 90px!important;
+	}
+	nav {
+		border-bottom: 2px solid var(--accent-color);
+		border-radius: 25px;
 	}
 
 }
@@ -49,6 +53,7 @@ nav {
 	border-top: 2px solid var(--accent-color);
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
+	margin-bottom: 10px;
 }
 	nav > .logo {
 		display: flex;
@@ -61,17 +66,8 @@ nav {
 		}
 		nav > .logo > h1 {
 			font-weight: bolder;
-			font-size: 200%;
+			font-size: 180%;
 		}
-
-nav::after {
-	content: "";
-	height: 10px;
-	background-color: var(--page-color);
-	grid-column-start: 1;
-	grid-column-end: 3;
-	border-top: 2px solid var(--accent-color);
-}
 
 .navigation-bar {
 	display: grid;
@@ -102,39 +98,40 @@ nav::after {
 
 .navigation-dropdown {
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: auto auto auto;
 }
-	.navigation-dropdown > i {
-		display: flex;
+.navigation-dropdown > .logo > i {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.navigation-dropdown > .dropdown-links {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	border-top: 2px solid var(--accent-color);
+}
+	.navigation-dropdown > .dropdown-links > a {
+		text-decoration: none;
 		width: 100%;
-		padding: 0 10px;
-		justify-content: center;
-		align-items: center;
+		text-align: center;
+		font-weight: bold;
+		font-size: 1.2em;
+		background-color: rgba(66, 152, 195, .5);
+		border-bottom: 2px solid black;
+		padding: 25px 0;
 	}
-	.navigation-dropdown > .dropdown-links {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-column-start: 1;
-		grid-column-end: 3;
-		border-top: 2px solid var(--accent-color);
+	.navigation-dropdown > .dropdown-links > a:hover {
+		background-color: rgba(66, 152, 195, .3);
 	}
-		.navigation-dropdown > .dropdown-links > a {
-			text-decoration: none;
-			width: 100%;
-			text-align: center;
-			font-weight: bold;
-			font-size: 1.2em;
-			background-color: rgba(66, 152, 195, .5);
-			border-bottom: 2px solid black;
-			padding: 25px 0;
-		}
-		.navigation-dropdown > .dropdown-links > a:hover {
-			background-color: rgba(66, 152, 195, .3);
-		}
-		.navigation-dropdown > .dropdown-links > .active {
-			background-color: var(--accent-color);
-			text-decoration: underline;
-		}
+	.navigation-dropdown > .dropdown-links > .active {
+		background-color: var(--accent-color);
+		text-decoration: underline;
+	}
 
 .wrapper > .main-image {
 	width: 100%;
