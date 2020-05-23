@@ -22,8 +22,13 @@ body {
 	}
 
 	.benchmark-logo {
-		padding: 20px 20px;
-		max-width: 170px;
+		padding: 20px 20px!important;
+		max-width: 170px!important;
+	}
+
+	nav > .logo > h1 {
+		font-size: 1.5em!important;
+		font-weight: bold!important;
 	}
 }
 
@@ -34,8 +39,8 @@ body {
 	}
 
 	.benchmark-logo {
-		max-height: 90px;
-		max-width: 120px;
+		max-height: 90px!important;
+		max-width: 120px!important;
 	}
 }
 
