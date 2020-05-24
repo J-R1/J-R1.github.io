@@ -3,6 +3,7 @@
 * {
 	font-family: 'Cinzel', serif;
 	color: black;
+	font-weight: bold;
 }
 
 :root {
@@ -83,7 +84,6 @@ nav {
 	}
 		.navigation-bar > .links > a {
 			text-decoration: none;
-			font-weight: bold;
 			margin: 10px;
 			padding: 10px 15px;
 			border-radius: 15px;
@@ -106,7 +106,6 @@ nav {
 		text-decoration: none;
 		width: 100%;
 		text-align: center;
-		font-weight: bold;
 		font-size: 1.2em;
 		background-color: rgba(66, 152, 195, .5);
 		border-bottom: 2px solid black;
@@ -134,22 +133,23 @@ nav {
 		flex-direction: column;
 		align-items: center;
 		padding: 20px;
-		font-size: 1.3em;
-		font-weight: bold;
+		font-size: 1.2em;
 		border: 2px solid var(--accent-color);
 		border-left: none;
 		border-radius: 0 25px 25px 25px;
+		text-decoration: underline;
 	}
+		.wrapper > .content > .side-content > span {
+			font-size: 1.3em;
+		}
 		.wrapper > .content > .side-content img {
 			max-width: 90px;
 			max-height: 90px;
 			padding: 20px 0;
 		}
-
 	.wrapper > .content > .main-content {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		padding: 20px;
-		border: 2px solid var(--accent-color);
 	}
