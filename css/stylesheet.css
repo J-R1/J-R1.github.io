@@ -20,10 +20,11 @@ body {
 	.navigation-bar {
 		display: none!important;
 	}
-	nav > .logo > img {
-		max-height: 90px!important;
-	}
 
+	nav > .logo > h1 {
+		width: 100%!important;
+		text-align: center!important;
+	}
 }
 
 /* LARGE SCREEN */
@@ -31,12 +32,12 @@ body {
 	.navigation-dropdown {
 		display: none!important;
 	}
-	nav > .logo > img {
-		max-height: 90px!important;
-	}
 	nav {
-		border-bottom: 2px solid var(--accent-color);
-		border-radius: 25px;
+		border-bottom: 2px solid var(--accent-color)!important;
+		border-radius: 25px!important;
+	}
+	nav > .logo > h1 {
+		font-size: 2.8em!important;
 	}
 
 }
@@ -53,7 +54,6 @@ nav {
 	border-top: 2px solid var(--accent-color);
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
-	margin-bottom: 10px;
 }
 	nav > .logo {
 		display: flex;
@@ -63,10 +63,11 @@ nav {
 	}
 		nav > .logo > img {
 			padding: 20px 20px!important;
+			max-height: 75px;
 		}
 		nav > .logo > h1 {
 			font-weight: bolder;
-			font-size: 180%;
+			font-size: 2.15em;
 		}
 
 .navigation-bar {
@@ -96,17 +97,10 @@ nav {
 			text-decoration: underline;
 		}
 
-.navigation-dropdown {
-	display: grid;
-	grid-template-columns: auto auto;
-}
-
 .navigation-dropdown > .dropdown-links {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-column-start: 1;
-	grid-column-end: 4;
-	border-top: 2px solid var(--accent-color);
+	border-top: 2px solid black;
 }
 	.navigation-dropdown > .dropdown-links > a {
 		text-decoration: none;
@@ -127,21 +121,35 @@ nav {
 	}
 
 .wrapper > .main-image {
+	margin: 10px 0;
 	width: 100%;
 }
 
 .wrapper > .content {
 	display: grid;
-	grid-template-columns: 1fr 3fr;
+	grid-template-columns: auto auto;
 }
 	.wrapper > .content > .side-content {
-		padding: 0 20px;
-		border: 3px solid var(--accent-color);
-		border-radius: 0 0 0 25px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 20px;
+		font-size: 1.3em;
+		font-weight: bold;
+		border: 2px solid var(--accent-color);
+		border-left: none;
+		border-radius: 0 25px 25px 25px;
 	}
+		.wrapper > .content > .side-content img {
+			max-width: 90px;
+			max-height: 90px;
+			padding: 20px 0;
+		}
+
 	.wrapper > .content > .main-content {
-		padding: 0 20px;
-		padding-top: 20px;
-		align-self: center;
-		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 20px;
+		border: 2px solid var(--accent-color);
 	}
