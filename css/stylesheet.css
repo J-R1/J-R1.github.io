@@ -46,7 +46,7 @@ body {
 .wrapper {
 	margin: 0 auto;
 	padding: 0;
-	max-width: 1920px;
+	/*max-width: 1920px;*/
 	background-color: var(--main-content-background-color);
 	border-radius: 25px 25px 25px 25px;
 }
@@ -132,7 +132,7 @@ nav {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding: 20px;
+		padding: 20px 3px;
 		border: 2px solid var(--accent-color);
 		border-left: none;
 		border-radius: 0 25px 25px 25px;
@@ -141,7 +141,7 @@ nav {
 			font-size: 1.2em;
 			text-decoration: underline;
 		}
-		.wrapper > .content > .side-content img {
+		.wrapper > .content > .side-content > img {
 			max-width: 75px;
 			max-height: 75px;
 			padding: 20px 0;
@@ -152,3 +152,13 @@ nav {
 		align-items: center;
 		padding: 20px;
 	}
+		.wrapper > .content > .main-content > p {
+			text-indent: 2em;
+			font-weight: 400;
+			letter-spacing: .1em;
+		}
+		.wrapper > .content > .main-content > p:first-child {
+			font-size: 1.7em;
+			text-decoration: underline;
+			text-indent: 0;
+		}
