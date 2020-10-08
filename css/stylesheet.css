@@ -4,13 +4,12 @@
 * {
 	font-family: 'Cinzel', serif;
 	color: black;
-	font-weight: bold;
 }
 
 :root {
 	--page-color: #e6e6e6;
 	--main-content-background-color: #f9f9f9;
-	--accent-color: #4298c3;
+	--accent-color: #4c96d7;
 }
 
 body {
@@ -26,6 +25,11 @@ body {
 		width: 100%!important;
 		text-align: center!important;
 	}
+
+	.wrapper > .content > .side-content {
+		height: 565px!important;  // change height when adding amenities
+	}
+
 	.wrapper > .content > .side-content > .amenities > li > img {
 		max-height: 60px!important;
 		max-width: 60px!important;
@@ -43,6 +47,10 @@ body {
 	}
 	nav > .logo > h1 {
 		font-size: 2.8em!important;
+	}
+
+	.wrapper > .content > .side-content {
+		height: 625px!important;  // change height when adding amenities
 	}
 }
 
@@ -160,6 +168,7 @@ nav {
 			justify-content: flex-start;
 			margin: 0;
 			padding: 0;
+			text-align: center;
 		}
 			.wrapper > .content > .side-content > .amenities > li {
 				display: flex;
@@ -199,11 +208,17 @@ nav {
 			letter-spacing: .1em;
 			font-family: 'Roboto', sans-serif;
 		}
-		.wrapper > .content > .main-content > p > a {
-			color: blue;
-			font-weight: bold;
-			text-decoration: underline;
-		}
+			.wrapper > .content > .main-content > p > u {
+				text-indent: 2em;
+				font-weight: 400;
+				letter-spacing: .1em;
+				font-family: 'Roboto', sans-serif;
+			}
+			.wrapper > .content > .main-content > p > a {
+				color: blue;
+				text-decoration: underline;
+				font-family: 'Roboto', sans-serif;
+			}
 		.wrapper > .content > .main-content  > a {
 			color: blue;
 			font-weight: 400;
@@ -245,6 +260,10 @@ nav {
 				max-width: 60px;
 				max-height: 60px;
 			}
+				.wrapper > .footer > .footer-links > li > a > img {
+					max-width: 60px;
+					max-height: 60px;
+				}
 	.wrapper > .footer > .contact {
 		text-align: center;
 		font-size: 1.2em;
