@@ -26,13 +26,13 @@ body {
 		text-align: center!important;
 	}
 
-	.wrapper > .content > .side-content {
-		height: 565px!important;  // change height when adding amenities
-	}
-
 	.wrapper > .content > .side-content > .amenities > li > img {
 		max-height: 60px!important;
 		max-width: 60px!important;
+	}
+
+	.wrapper > .content > .main-content {
+		max-width: 95%!important;
 	}
 }
 
@@ -49,9 +49,10 @@ body {
 		font-size: 2.8em!important;
 	}
 
-	.wrapper > .content > .side-content {
-		height: 625px!important;  // change height when adding amenities
+	.wrapper > .content > .main-content {
+		max-width: 85%!important;
 	}
+
 }
 
 .wrapper {
@@ -143,6 +144,7 @@ nav {
 	display: grid;
 	grid-template-columns: auto 1fr;
 }
+
 	.wrapper > .content > .side-content {
 		display: flex;
 		flex-direction: column;
@@ -151,7 +153,7 @@ nav {
 		border: 2px solid var(--accent-color);
 		border-left: none;
 		border-radius: 25px;
-	}
+}
 		.wrapper > .content > .side-content > .side-content-title {
 			padding-top: 25px;
 			padding-bottom: 25px;
@@ -198,8 +200,8 @@ nav {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		flex-wrap: wrap;
 		padding: 20px;
-		max-width: 85%;
 		margin: 0 auto;
 	}
 		.wrapper > .content > .main-content > p {
